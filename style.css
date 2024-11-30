@@ -1,0 +1,253 @@
+/* *{
+    font-family: "Tiny5", sans-serif;
+} */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 10px 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: orange;
+}
+
+.title {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.title h1{
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#lastName{
+    color: brown;
+}
+.btn{
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color:black;
+    background-color: burlywood;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;  
+}
+.btn:hover{
+    background-color: darkgreen;
+    transform: scale(1.1); 
+}
+.title p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.title a{
+    background-color: black;
+    color: orange;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 900;
+    display: inline-block;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.imggroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+
+/* About section */
+#about{
+    margin: 5% 8% 0% 8%;
+}
+
+.heading {
+    font-weight: 700;
+    text-align: center;
+}
+.heading h2{
+    font-weight: 850;
+}
+    
+.heading span{
+    color: orangered;
+    font-weight: 600;
+    
+}
+.aboutcontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-top: 50px;
+}
+.aboutimg img{
+    width: 80%;
+}
+.aboutdetails p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.informmation{
+    margin-top: 40px;
+}
+.infobox{
+
+    margin-bottom: 20px;
+}
+.infobox span{
+    margin-left: 20px;
+    
+}
+/* skills */
+#skill{
+    margin: 5% 8% 0% 8%;
+}
+.skillcontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-top: 50px;
+}
+.skillimg{
+    width: 80%;
+}
+.progressbar{
+    margin-top: 2rem;
+}
+.barcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    position: relative;   
+}
+
+.bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    /* border-radius: 10px; */
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    width: 85%;
+    background-color: orange;
+}
+.cssbar{
+    width: 75%;
+    background-color: orange;
+}
+.jsbar{
+    width: 65%;
+    background-color: orange;
+}
+.reactbar{
+    width: 55%;
+    background-color: orange;
+}
+
+/* contact */
+
+.iconset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icon, .uparrow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    align-items: center;
+    margin: 0px 15px;
+}
+.icon i{
+    color: black;
+    font-size: 30px;
+}
+.icon:hover{
+    background-color: orange;
+    background-image: linear-gradient(to bottom right, yellow,red);
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 3rem 0rem;
+}
+footer p{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    background-image: linear-gradient(to bottom right, yellow,red);
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px; 
+    
+}
